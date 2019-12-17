@@ -1,0 +1,663 @@
+.home h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-bottom: 3px solid white;
+}
+
+.home h1 span {
+  color: #ff652f;
+}
+
+.home h2, .home h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+}
+
+.home h3 {
+  margin-top: 20px;
+}
+
+.home .titre {
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.home footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.home .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.home .icon div {
+  margin: 10px;
+}
+
+.home .icon i {
+  font-size: 2rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.home .icon i:hover {
+  color: #ff652f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.home .copy {
+  margin-right: 40px;
+  padding: 0;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+@media screen and (max-width: 425px) {
+  .home h1 {
+    font-size: 4rem;
+  }
+  .home h2, .home h3, .home h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.about main {
+  color: white;
+  margin-top: 250px;
+}
+
+.about .titre {
+  text-align: center;
+  margin: 0 150px 0 150px;
+}
+
+.about .titre p, .about .titre h2, .about .titre h3, .about .titre h4 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.about h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #ff652f;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #272727;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.about .container .icon {
+  position: fixed;
+  left: 20px;
+  bottom: 15px;
+  width: 20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.about .container .icon div {
+  margin-top: 10px;
+}
+
+.about .container .icon a {
+  font-size: 2rem;
+  color: white;
+}
+
+.about .container .icon a:hover {
+  color: #ff652f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.about .container p, .about .container h2, .about .container h3, .about .container h4 {
+  margin: 0 0 5px 0;
+  top: 98vh;
+}
+
+.about .exp {
+  width: 60vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem auto 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about .copy {
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 20%;
+  text-align: right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: auto;
+  height: 125px;
+}
+
+.about .boulot {
+  display: block;
+  background-color: #414141;
+  padding: 10px 40px 6px 10px;
+  margin-top: 30px;
+  border-bottom: 5px solid #ff652f;
+}
+
+.about h2, .about .home h3, .home .about h3 {
+  color: #ff652f;
+}
+
+.about h3 {
+  font-size: 1.4rem;
+}
+
+.about h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 426px) and (max-width: 800px) {
+  .about h1 {
+    font-size: 2.5rem;
+  }
+  .about .titre {
+    width: 80%;
+    margin: auto;
+  }
+  .about .titre p, .about .titre h2, .about .titre h3, .about .titre h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about h1 {
+    font-size: 2rem;
+  }
+  .about .titre {
+    width: 80%;
+    margin: auto;
+  }
+  .about .titre p, .about .titre h2, .about .titre h3, .about .titre h4 {
+    font-size: 0.8rem;
+  }
+  .about .boulot p, .about .boulot h2, .about .boulot h3, .about .boulot h4 {
+    font-size: 0.9rem;
+  }
+  .about .boulot h2, .about .boulot .home h3, .home .about .boulot h3 {
+    font-size: 1.5rem;
+  }
+  .about .boulot h3 {
+    font-size: 1.2rem;
+  }
+  .about .boulot h4 {
+    font-size: 0.8rem;
+  }
+}
+
+.projet .titre {
+  text-align: center;
+  margin: 0 150px 0 150px;
+}
+
+.projet .titre p, .projet .titre .about h2, .about .projet .titre h2, .projet .titre .about h3, .about .projet .titre h3, .projet .titre .about h4, .about .projet .titre h4 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.projet h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #ff652f;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.projet h1 {
+  font-weight: normal;
+}
+
+.projet .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #272727;
+  height: 100%;
+  padding-bottom: 20px;
+  padding-bottom: 40px;
+  height: 55vh;
+}
+
+.projet .container p, .projet .container .about h2, .about .projet .container h2, .projet .container .about h3, .about .projet .container h3, .projet .container .about h4, .about .projet .container h4 {
+  top: 93vh;
+}
+
+.projet .projet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.projet .projet .item {
+  margin: 20px 30px 0 0;
+  border-bottom: 5px solid #ff652f;
+  position: relative;
+  overflow: hidden;
+}
+
+.projet .projet img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.projet .projet .item:hover .hoverprojet {
+  opacity: 0.9;
+}
+
+.projet .projet .item:hover .hoverprojet:after {
+  top: 0;
+}
+
+.projet .projet .hoverprojet {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.projet .projet .hoverprojet:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ff652f;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+.projet .projet .hoverprojet i {
+  position: relative;
+  z-index: 50;
+  color: black;
+}
+
+.projet .projet .hoverprojet i:hover {
+  color: white;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.projet .projet .hoverprojet span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.projet .copy {
+  color: white;
+  position: fixed;
+  right: 5px;
+  bottom: 15px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 20%;
+  text-align: right;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: auto;
+  height: 125px;
+}
+
+.projet .icon {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  left: 20px;
+  bottom: 15px;
+  width: 20%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.projet .icon div {
+  margin-top: 10px;
+}
+
+.projet .icon a {
+  font-size: 2rem;
+  color: white;
+}
+
+.projet .icon a:hover {
+  color: #ff652f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 426px) and (max-width: 800px) {
+  .projet .projet {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projet h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .projet .projet {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .projet .titre {
+    margin: 0;
+  }
+  .projet h1 {
+    font-size: 2.5rem;
+  }
+  .projet .item {
+    height: 15vh;
+    margin-right: 0;
+  }
+  .projet .container {
+    height: 110vh;
+  }
+}
+
+.contact .titre {
+  text-align: center;
+  margin: 0 150px 0 150px;
+}
+
+.contact .titre p, .contact .titre .about h2, .about .contact .titre h2, .contact .titre .about h3, .about .contact .titre h3, .contact .titre .about h4, .about .contact .titre h4 {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.contact h1 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+.contact main {
+  margin-top: 30vh;
+}
+
+.contact h1 {
+  font-weight: normal;
+  font-size: 3rem;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.contact .element {
+  margin-right: 150px;
+}
+
+.contact .element div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+.contact .element:nth-of-type(1) {
+  margin-left: 150px;
+}
+
+.contact .element h2, .contact .element .home h3, .home .contact .element h3 {
+  margin-left: 10px;
+  font-weight: normal;
+  padding-top: 4px;
+}
+
+.contact .element span {
+  padding-left: 3px;
+}
+
+.contact .element span span {
+  padding-left: 4px;
+}
+
+.contact h2, .contact .home h3, .home .contact h3 {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.contact h3 {
+  color: #ff652f;
+  margin: 0;
+  padding: 0;
+}
+
+.contact .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 1.4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact .info i {
+  margin-left: 2px;
+}
+
+.contact .info span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 0;
+}
+
+.contact .info .adresse {
+  margin-left: 4px;
+}
+
+.contact .copy {
+  margin-right: 40px;
+  padding: 0;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.contact .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+}
+
+.contact .icon div {
+  margin: 10px;
+}
+
+.contact .icon i {
+  font-size: 2rem;
+  color: white;
+  margin-right: 10px;
+}
+
+.contact .icon i:hover {
+  color: #ff652f;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+html {
+  font-size: 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/dist/img/model-1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/dist/img/model-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin: 0;
+  height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.2rem;
+}
+
+header nav li {
+  margin: 20px;
+}
+
+header nav li:nth-of-type(4) {
+  margin-right: 40px;
+}
+
+header nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+header nav a:hover {
+  color: #ff652f;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 426px) and (max-width: 800px) {
+  header nav ul {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header nav ul {
+    font-size: 0.8rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 10px;
+  }
+  header nav li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+}
+
+main {
+  margin-top: 300px;
+}
+/*# sourceMappingURL=style.css.map */

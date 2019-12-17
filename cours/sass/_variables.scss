@@ -1,0 +1,25 @@
+$primary-color: rgb(163, 96, 96);
+$secondary-color: green;
+$autre-couleur: darken($primary-color,20%);
+$marges: 10px;
+$largeur: 300px + $marges*2;
+
+$font-weights:(
+    "regular" :400,
+    "medium": 500,
+    "bold":700
+);
+
+$palettes:(
+    orange: (
+        base: #ef7c00,
+        alt: #ff6000,
+        op20:#f29633
+    ),
+    gray: (
+        base:#8c8c8c,
+        light: #f7f7f7,
+        dark: #7c7c7c
+        
+    )
+);

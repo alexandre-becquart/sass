@@ -1,0 +1,192 @@
+@import "variables";
+
+@mixin bgi {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+        ), url(/dist/img/model-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    margin: 0;
+    height: 100vh;
+    
+    
+}
+
+@mixin font{
+    font-family: $font;
+    
+}
+
+@mixin sc {
+    color: $secondary-color;
+    
+}
+
+@mixin ze {
+    margin: 0;
+    padding: 0;
+    
+}
+
+@mixin titrecenter {
+    text-align: center;
+}
+
+@mixin sb {
+    justify-content: space-between;
+    
+}
+
+
+@mixin footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+@mixin flex {
+    display: flex;    
+}
+
+@mixin copy {
+    margin-right: 40px;
+    padding: 0;
+    color: white;
+    
+}
+
+@mixin cc {
+    margin-right: 40px;
+    padding: 0;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin borange {
+    border-bottom: 5px solid $secondary-color;
+}
+
+@mixin boulot {
+    display: block;
+    background-color: lighten($primary-color, 10%);
+    padding: 10px 40px 6px 10px;
+    margin-top: 30px;
+    @include borange;
+}
+
+@mixin titre {
+    .titre{
+        @include titrecenter;
+        margin: 0 150px 0 150px;
+        p{
+            font-size: 1.3rem;
+            @include ze;
+            margin-bottom: 30px;
+        }
+    }
+    h1{
+        @include ze;
+        margin-bottom: 10px;
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+    
+}
+
+@mixin contact {
+    .titre{
+        @include titrecenter;
+        margin: 0 150px 0 150px;
+        p{
+            font-size: 1.3rem;
+            @include ze;
+            margin-bottom: 30px;
+        }
+    }
+    h1{
+        @include ze;
+        margin-bottom: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+    
+}
+
+
+@mixin bgcontainer {
+        @include flex;
+        background-color: $primary-color;
+        height: 100%;
+        padding-bottom: 20px;
+}
+
+
+@mixin hovericon {
+    &:hover{
+        color: $secondary-color;
+        transition: all 0.5s ease-in-out;
+    }
+
+}
+
+@mixin colone {
+
+    .icon{
+        align-self: flex-end;
+        width: 20%;
+        box-sizing: border-box;
+        padding: 0 0 0 15px ;
+        i{
+            font-size: 2rem;
+            color: white;
+            margin-right: 10px;
+            &:hover{
+                color: $secondary-color;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+       
+    }
+    .copy{
+        width: 20%;
+        box-sizing: border-box;
+        align-self: flex-end; 
+        box-sizing: content-box; 
+        color: white;  
+        p{
+            position: absolute;
+            right: -15px;
+            text-align: right;
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            -webkit-transform: rotate();
+        }
+    }    
+}
+
+@mixin tablet {
+    @media screen and (min-width: 426px) and (max-width: 800px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 425px){
+        @content;
+    }
+}
+
+

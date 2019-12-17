@@ -1,0 +1,139 @@
+// $primary-color: rgb(163, 96, 96);
+// $secondary-color: green;
+// $autre-couleur: darken($primary-color,20%);
+// $marges: 10px;
+// $largeur: 300px + $marges*2;
+
+@import "mixin";
+@import "variables";
+
+body{
+    background-color: darken($primary-color, 20%);
+    color: lighten($secondary-color, 10%);
+}
+
+header{
+    background-color: $autre-couleur;
+}
+
+h1{
+    color: mix($primary-color, red, 50%);
+    width: $largeur;
+    margin: $marges;
+}
+
+li{
+    margin: $marges;
+    width: $largeur - $marges*2;
+}
+
+// @mixin box($shadow-color: blue){
+//     height: 200px;
+//     width: 300px;
+//     background-color: white;
+//     margin: 2px;
+//     color: black;
+//     box-shadow: 5px 5px 5px rgba($shadow-color, 0.5);
+
+// }
+
+div{
+    @include box;    
+}
+
+section{
+    @include box($shadow-color: #000);
+}
+
+
+// @mixin mobile {
+//     @media screen and (max-width: 480px){
+//         @content
+//     }
+// }
+
+@include mobile{
+    body{
+        background-color: pink;
+    }
+}
+
+// @mixin tablet {
+//     @media screen and (min-width: 480px){
+//         @content
+//     }
+// }
+
+@include tablet{
+    body{
+        background-color: deeppink;
+    }
+}
+
+/*map-get*/
+
+// $font-weight:(
+//     "regular" :400,
+//     "medium": 500,
+//     "bold":700
+// );
+
+p{
+    font-weight:map-get($font-weight, "regular");
+}
+
+/*fonction pour racourcie*/
+
+// @function weight($nom){
+//     @return map-get($font-weight, $nom)
+// }
+
+div{
+    font-weight: weight("regular");
+}
+
+
+// $palettes:(
+//     orange: (
+//         base: #ef7c00,
+//         alt: #ff6000,
+//         op20:#f29633
+//     ),
+//     gray: (
+//         base:#8c8c8c,
+//         light: #f7f7f7,
+//         dark: #7c7c7c
+        
+//     )
+// );
+
+// @function palette($palette, $tone: 'base'){
+//     @return map-get(map-get($palettes, $palette), $tone);
+// }
+
+div{
+    color: palette(orange);
+}
+
+// $palettes: (
+//     orange: (
+//         base:  #ef7c00,
+//         alt:  #ff6000,
+//         op20: #f29633
+//     ),
+//     gray: (
+//         base: #8c8c8c,
+//         light: #f7f7f7,
+//         dark: #7c7c7c
+//     )
+// );
+// // map-get(map-get($palettes, orange), alt)
+
+// //fonction pour raccourcir l'appel à la map de palettes de couleur
+// @function palette($palette, $tone: 'base') {
+//     @return map-get(map-get($palettes, $palette), $tone);
+// } //---------- Pour ajouter une couleur, ex : color: palette(blue, light);
+
+// div {
+//     color: palette(orange);
+// }

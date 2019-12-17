@@ -1,0 +1,66 @@
+body {
+  background-color: #633a3a;
+  color: #00b300;
+}
+
+header {
+  background-color: #633a3a;
+}
+
+h1 {
+  color: #d13030;
+  width: 320px;
+  margin: 10px;
+}
+
+li {
+  margin: 10px;
+  width: 300px;
+}
+
+div {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  margin: 2px;
+  color: black;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 255, 0.5);
+}
+
+section {
+  height: 200px;
+  width: 300px;
+  background-color: white;
+  margin: 2px;
+  color: black;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: pink;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: deeppink;
+  }
+}
+
+/*map-get*/
+p {
+  font-weight: 400;
+}
+
+/*fonction pour racourcie*/
+div {
+  font-weight: 400;
+}
+
+div {
+  color: #ef7c00;
+}
+/*# sourceMappingURL=vars.css.map */

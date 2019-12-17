@@ -1,0 +1,53 @@
+@mixin nav {
+    nav{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            font-family: $font;
+            font-size: 1.2rem;
+        }
+        li{
+            margin: 20px;
+            &:nth-of-type(4){
+                margin-right: 40px;
+            }
+        }
+
+        a{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: $secondary-color;
+                transition: all 0.3s ease-in-out            ;
+                -webkit-transition: all 0.3s ease-in-out            ;
+                -moz-transition: all 0.3s ease-in-out            ;
+                -ms-transition: all 0.3s ease-in-out            ;
+                -o-transition: all 0.3s ease-in-out            ;
+            }
+
+        }
+
+        @include tablet{
+            ul{
+                font-size: 0.7rem;
+            }
+        }
+        @include mobile {
+            ul{
+                font-size: 0.8rem;
+                justify-content: flex-start;
+                flex-direction: column;
+                padding-left: 10px;
+            }
+            li{
+                @include ze;
+                margin-bottom: 5px;
+            }
+        }
+    
+    }
+    
+}
+

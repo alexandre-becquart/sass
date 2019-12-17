@@ -1,0 +1,72 @@
+
+.home{
+    h1{
+    font-size: 5rem;
+    color: white;
+    @include font;
+    @include ze;
+    display: block;
+    border-bottom: 3px solid white;
+        span{
+            @include sc;
+        }
+    }   
+
+
+    h2{
+        @include ze;
+        color: white;
+        font-weight: normal;
+        @include font;
+        font-size: 1.3rem;
+    }
+
+    h3{
+        @extend h2;
+        margin-top: 20px;
+    }
+
+    .titre{
+        @include titrecenter;
+        margin-top: 25vh;
+        
+    }
+
+    footer{
+        @include footer;   
+    }
+
+    .icon{
+        @include flex;
+        margin-left: 10px;
+        div{
+            margin: 10px;
+        }
+
+        i{
+            font-size: 2rem;
+            color: white;
+            margin-right: 10px;
+            @include hovericon;
+        }
+    }
+
+    .copy{
+        @include copy;
+        @include font;
+        
+    }
+
+    @include mobile {
+
+        h1{
+            font-size: 4rem;
+        }
+        h2, h3{
+            font-size: 1.2rem;
+        }
+
+
+    }
+}
+

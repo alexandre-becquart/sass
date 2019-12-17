@@ -1,0 +1,48 @@
+@mixin box($shadow-color: blue){
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    margin: 2px;
+    color: black;
+    box-shadow: 5px 5px 5px rgba($shadow-color, 0.5);
+
+}
+
+@mixin mobile {
+    @media screen and (max-width: 480px){
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 480px){
+        @content;
+    }
+}
+
+
+@function weight($nom){
+    @return map-get($font-weights, $nom);
+}
+
+@function palette($palette, $tone: 'base'){
+    @return map-get(map-get($palettes, $palette), $tone);
+}
+
+@mixin button ($bgc : red, $l: 250px, $br: true) {
+    width: $l;
+    height: 50px;
+    text-align: center;
+    background-color: $bgc;
+    @if $br{
+        border-radius: 4px    ;
+        -webkit-border-radius: 4px    ;
+        -moz-border-radius: 4px    ;
+        -ms-border-radius: 4px    ;
+        -o-border-radius: 4px    ;
+    }  
+    @else{
+        border: 1px soldid black;
+    } 
+}
+

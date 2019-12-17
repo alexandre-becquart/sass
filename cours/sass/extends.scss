@@ -1,0 +1,51 @@
+@import "variables";
+@import "mixin";
+
+.class1{
+    width: 200px;
+    height: 250px;
+    background-color: #333;
+    p{
+        color: red;
+    }
+}
+
+.element1{
+    @extend .class1;
+    color: lightblue;
+}
+
+.element2{
+    @extend .class1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+%class2{
+    width: 600px;
+    height: 250px;
+    background-color: deeppink;
+}
+
+.element3{
+    @extend %class2;
+    position: absolute;
+}
+
+@mixin bp($valeur) {
+    // @media screen and (mix-width: $valeur){
+    //     @content;
+    @media screen and (mix-width: #{$valeur}px){
+        @content;
+    }
+    
+}
+
+@include bp(480){
+    body{
+        background-color: blue;
+    }
+}
+
+a.btn{
+    @include button(blue, 300px, false);
+}

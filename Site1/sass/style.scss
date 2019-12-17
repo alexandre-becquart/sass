@@ -1,0 +1,31 @@
+@import "variables";
+@import "mixin";
+@import "home";
+@import "menu";
+@import "about";
+@import "project";
+@import "contact";
+
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    @include bgi;
+    @include font;
+    box-sizing: border-box;
+    
+}
+
+header{
+    @include nav;
+}
+
+main{
+    margin-top: 300px;
+}
